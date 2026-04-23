@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Failure Analyzer Tool</title>
+      <meta charset ="utf-8">
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+      <link rel="icon" href="images/favicon.ico">
+      <!-- Bootstrap -->
+      <link href = "css/bootstrap.min.css" rel = "stylesheet">
+      <link href = "css/sonicwall.css" rel = "stylesheet">
+      <script src = "js/jquery.js"></script>
+      <script src = "js/bootstrap.min.js"></script>
+   </head>
+   <body>
+      <div class = "container">
+         <div class="row">
+            <h1 class="col-md-12" id="toolname">Failure Analyzer Tool &copy</h1>
+         </div>
+         <div class="row">
+            <form action="upload.php" method="POST" enctype="multipart/form-data">
+               <div class="row">
+                     <div class = "col-md-6"><h4 id="inputlabel"><label for="logfile">Log File</label></h4></div>
+                     <div class = "col-md-6"><input type="file" name="log_file" id="logfile"></div>
+               </div>
+               <div class="row">
+                  <div class="col-md-12"><h4 id="or">OR</h4></div>
+               </div>
+               <div class="row">
+                  <div class = "col-md-6"><h4 id="inputlabel"><label for="log_link">Log Link</label></h4></div>
+                  <div class = "col-md-6"><input type="text" name="log_link" id="log_link" class="inputs" placeholder="Enter log link" autofocus="autofocus"></div>
+               </div>
+               <div class="row">
+                  <div class="col-md-6"><h4 id="inputlabel"><label for="test_type">Test Type</label></h4></div>
+                  <div class="col-md-6">
+                     <select name="test_type" id="test_type" class="inputs">
+                        <option>UI</option>
+                        <option>API</option>
+                     </select>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-6"><h4 id="inputlabel"><label for="test_type">Product</label></h4></div>
+                  <div class="col-md-6">
+                     <select name="product" id="product" class="inputs">
+                        <option>NSM</option>
+                        <option>SONICOSUI7</option>
+                     </select>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-12" id="submit_button"><input type="submit" value="Analyze" id="analzeBtn"></div>
+                  <div class="col-md-12" id="reset_button"><input type="reset" value="Clear" id="resetBtn"></div>
+               </div>
+            </form>      
+         </div>
+         <div class="row">
+            <br>
+            <br>
+            <h3 class="col-md-12" id="warning">Warning - Don't abuse this tool, its not a replacement for actual failure debugging, use it wisely.</h3>
+         </div>
+      </div>  
+   </body>
+</html>

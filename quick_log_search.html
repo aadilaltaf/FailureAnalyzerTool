@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Quick Log Search</title>
+      <meta charset ="utf-8">
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+      <link rel="icon" href="images/favicon.ico">
+      <!-- Bootstrap -->
+      <link href = "css/bootstrap.min.css" rel = "stylesheet">
+      <link href = "css/sonicwall.css" rel = "stylesheet">
+      <script src = "js/jquery.js"></script>
+      <script src = "js/bootstrap.min.js"></script>
+   </head>
+   <body>
+      <div class = "container">
+         <div class="row">
+            <h1 class="col-md-12" id="toolname"><u>Quick Log Search</u></h1>
+         </div><br>
+         <div class="row">
+            <h5 class="col-md-12" id="header">This tool helps to search for a particular log (string) query that may have occured in any of the log files for a particluar SCM Label</h5>
+            <br><br><br>
+         </div>
+         <div class="row">
+            <form action="search.php" method="POST" enctype="multipart/form-data">
+               <div class="row">
+                  <div class = "col-md-6"><h4 id="inputlabel"><label for="scm_label">SCM Label</label></h4></div>
+                  <div class = "col-md-6"><input type="text" name="scm_label" id="scm_label" class="inputs" placeholder="Enter SCM Label" autofocus="autofocus"></div>
+               </div>
+               <div class="row">
+                  <div class = "col-md-6"><h4 id="inputlabel"><label for="search_query">Search Query</label></h4></div>
+                  <div class = "col-md-6"><input type="text" name="search_query" id="search_query" class="inputs" placeholder="Enter Search Query" autofocus="autofocus"></div>
+               </div>
+               <div class="row">
+                  <div class="col-md-6"><h4 id="inputlabel"><label for="test_type">Product</label></h4></div>
+                  <div class="col-md-6">
+                     <select name="product" id="product" class="inputs">
+                        <option>NSM</option>
+                        <option>SONICOSUI7</option>
+                     </select>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-12" id="submit_button"><input type="submit" value="Search Query" id="analzeBtn"></div>
+                  <div class="col-md-12" id="reset_button"><input type="reset" value="Clear" id="resetBtn"></div>
+               </div>
+            </form>      
+         </div>
+      </div>  
+   </body>
+</html>

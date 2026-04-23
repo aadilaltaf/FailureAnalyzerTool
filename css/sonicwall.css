@@ -1,0 +1,146 @@
+body {
+  /* text-align: center; */
+  /* background-color:#ff791a; */
+  background-color:#ff794c;
+  /* background-image: url("../images/background.jpg"); */
+  /* background-image: linear-gradient(to right, hsla(60, 94%, 50%, 0.39), rgba(12, 117, 12, 0.719)); */
+  /* background-image: linear-gradient(to left,  rgb(104, 102, 102) 30%, hsla(0, 9%, 82%, 0.736) 50%, #f38917b7 70% ); */
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; */
+}
+#toolname{
+  text-align: center;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 48px;
+  font-variant: small-caps;
+  text-shadow:.07em .07em black;
+  color:white;
+  padding: 10px 20px;
+  margin: 10px;
+  
+}
+#or{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color:white;
+  font-style: italic;
+  margin: 5px 25px;
+}
+#inputlabel{
+  font-family:'Times New Roman', Times, serif;
+  color:white;
+  text-shadow:.1em .1em gray;
+  margin: 10px 5px;
+}
+#submit_button{
+  text-align: center;
+  padding: 20px;
+}
+#analzeBtn{
+  font-family:cursive;
+  padding: 10px 60px;
+  font-size: 24px;
+  font-variant: small-caps;
+  background-color:black;
+  color:snow;
+  letter-spacing: 2px;
+  border-radius: 20px;
+  transition-property: all, all, all;
+ 	transition-duration: 1s, 0.8s, 1s;
+ 	transition-timing-function: ease-out, ease-in, ease-out;
+
+}
+#analzeBtn:hover{
+	background-color:white;
+	letter-spacing: 8px;
+ 	color: #000;
+  border-radius: 40px;
+}
+.inputs{
+  padding: 5px 25px;
+}
+i{
+  color: white;
+}
+#error{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#table{
+	font-weight: normal;
+  /* background:#326481;	 */
+  background-color: darkslateblue;
+	margin:1% 1% 1% 1%;
+	padding: .1% 2% 4% 2%;
+  border-radius:1%;
+}
+
+table{
+	background-color:#fff;
+	margin:5% 1% 1% 1%;
+	font-size:14px;
+	border-collapse: collapse;
+	border: 3px solid green;
+	font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+	font-size-adjust: initial;
+}
+th{
+	padding:8px;
+	border: 2px solid rgb(109, 199, 109);
+}
+td {
+  word-break: break-all;
+  min-width: 10px;
+  max-width: 730px;
+	padding:5px;
+	border: 2px solid darkgreen;
+}
+#exceptions{
+  max-width: 1200px;
+}
+#testcase_name{
+  max-width: 240px;
+}
+#other_messages{
+  max-width: 200px;
+}
+#reset_button{
+  text-align: center;
+  padding: 15px;
+}
+#resetBtn{
+  font-family:cursive;
+  padding: 10px 50px;
+  font-size: 22px;
+  font-variant: small-caps;
+  background-color:white;
+  color:black;
+  letter-spacing: 2px;
+  border-radius: 25px;
+  transition-property: all, all, all;
+ 	transition-duration: 1s, 0.8s, 1s;
+ 	transition-timing-function: ease-out, ease-in, ease-out;
+
+}
+/* unvisited link */
+a:link {
+  color:black;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  color: darkslategrey;
+}
+
+/* selected link */
+a:active {
+  color: black;
+} 
+#copy {
+  text-decoration: none;
+}
